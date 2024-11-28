@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Delete Person</title>
+</head>
+<body>
+  <h1>Delete Person</h1>
+  <p>Are you sure you want to delete <strong><%= person.name %></strong>?</p>
+  <form action="/person/<%= person._id %>/delete" method="POST">
+    <button type="submit">Yes, Delete</button>
+    <a href="/person">Cancel</a>
+  </form>
+</body>
+</html>
